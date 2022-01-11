@@ -1,5 +1,6 @@
 let html = document.querySelector("#html");
 let style = document.querySelector("#style");
+
 let string =`/* 你好，我叫小然
 * 接下来我演示一下我的前端功底
 * 首先我要准备一个div
@@ -67,7 +68,7 @@ let step = () => {
     window.scrollTo(0, 99999);
     html.scrollTo(0, 99999);
     if(n < string.length-1){ 
-        //如果n不是最后一个，就继续
+        //如果n不是最后一个就继续
         n += 1;
         step();
     }
