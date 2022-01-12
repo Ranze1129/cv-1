@@ -46,6 +46,27 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 5
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 100%);
 }
+/* 然后让它转一下 */
+#div1{
+    animation: .8s xxx infinite running;
+}
+@keyframes xxx {
+    0% {
+        transform: rotate(0deg);
+       }
+    25% {
+     transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+       }
+    75% {
+        transform: rotate(270deg);
+       }
+    100% {
+        transform: rotate(360deg);
+       }
+  }
 `;
 
 let string2 =""
@@ -72,7 +93,7 @@ let step = () => {
         n += 1;
         step();
     }
-  }, 50); //用50比较好
+  }, 0); //用50比较好
 };
 
 step();
