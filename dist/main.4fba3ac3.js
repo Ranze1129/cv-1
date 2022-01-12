@@ -132,7 +132,7 @@ var step = function step() {
             n += 1;
             step();
         }
-    }, 0); //用50比较好
+    }, 50); //用50比较好
 };
 
 step();
